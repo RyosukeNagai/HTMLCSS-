@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "style.scss"
+        "2column.scss"
     ],
     "names": [],
-    "file": "style.css"
+    "file": "2column.css"
 }
