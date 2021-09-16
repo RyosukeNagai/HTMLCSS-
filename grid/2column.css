@@ -1,1 +1,71 @@
-/* No CSS *//*# sourceMappingURL=2column.css.map */
+body {
+  display: -ms-grid;
+  display: grid;
+  min-height: 100vh;
+  -ms-grid-rows: 100px 100px 1fr 100px;
+      grid-template-rows: 100px 100px 1fr 100px;
+  -ms-grid-columns: auto 1fr auto;
+      grid-template-columns: auto 1fr auto;
+      grid-template-areas: "title title title" "nav main ad" "nav main side" "footer footer footer";
+}
+
+body > * {
+  margin: 3px;
+  padding: 10px;
+}
+
+h1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: title;
+  background: #faa;
+}
+
+main {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: main;
+  background: #afa;
+}
+
+nav {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: nav;
+  background: #aaf;
+}
+
+#side {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: side;
+  background: #faf;
+}
+
+footer {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: footer;
+  background: #aaa;
+}
+
+#ad {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: ad;
+  background: #888;
+  height: auto;
+}
+
+p {
+  display: inline-block;
+}
+
+h2, p {
+  margin: 0;
+}
+/*# sourceMappingURL=2column.css.map */

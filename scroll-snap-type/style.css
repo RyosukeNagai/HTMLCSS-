@@ -1,0 +1,58 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+html {
+    font-size: 100%;
+}
+body {
+	color: #555;
+    font-family: sans-serif;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+p {
+    line-height: 1.7;
+}
+.title {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+.container {
+    /* スクロールスナップの設定 */
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x;
+}
+.area {
+    scroll-snap-align: start;
+    height: 100vh;
+    width: 50vw;
+    flex: none;
+    padding: 1rem;
+
+    /* テキストを画面中央に表示 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* スクロールスナップの設定 */
+    
+    height: 100vh;
+}
+
+/* 各エリアの背景色 */
+.area:nth-child(even) {
+    background-color: #ffd1da;
+}
+.area:nth-child(odd) {
+    background-color: #fff3d1;
+}
+ 
+/*
+モバイルサイズ
+================================================ */
+@media (max-width: 400px) {
+    .title {
+        font-size: 3rem;
+    }
+}
